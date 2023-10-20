@@ -1,0 +1,148 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the base font family and size */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Newspaper container */
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Top Line */
+.topLine {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.topLineContent p {
+    margin: 0;
+}
+
+/* Second Line (Introduction) */
+.secondLine {
+    font-style: italic;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Headline */
+.headline {
+    text-align: center;
+}
+
+.headline h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Division 1 */
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.div1News {
+    width: 60%;
+}
+
+.div1Img img {
+    max-width: 100%;
+}
+
+/* Division 2 (Grid) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.gridImg img {
+    max-width: 100%;
+}
+
+.dateTag {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.gridContent {
+    background-color: #f3f3f3;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.gridContent b {
+    font-weight: bold;
+}
+
+.tagLine h2 {
+    font-style: italic;
+}
+
+/* Bottom Line */
+.bottomLine {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+/* Page Link */
+.link {
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    body {
+        padding: 5px;
+    }
+
+    .topLine {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topLineContent {
+        text-align: center;
+    }
+
+    .div1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .div1Img img,
+    .gridImg img {
+        max-width: 100%;
+        height: auto;
+    }
+}
